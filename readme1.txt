@@ -26,7 +26,7 @@ ls -ah查看被隐藏的目录
 cd ~/.filename 进入filename
 
 理解工作区、暂存区、本地仓库
-工作区即操作区，暂存区是通过git add filename将文件添加至暂存区，本地仓库是通过git commit filename将文件添加至本地仓库
+工作区即操作区，暂存区是通过git add filename将文件添加至暂存区，本地仓库是通过git commit -m将文件添加至本地仓库
 git status 查看工作区状态
 git diff filename 查看文件修改内容
 git log 查看提交日志，每次提交会生成一个版本有commit id
