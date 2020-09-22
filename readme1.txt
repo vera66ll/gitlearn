@@ -56,3 +56,18 @@ git remote remove origin 取消本地目录关联的远程库
 5.把本地库所有内容推送到远程库：git push -u origin master
 由于远程库是空的，因此第一次推送master分支时，加上了-u，既推送了本地master分支，还把本地master分支和远程分支关联起来。
 从现在开始，只要本地做了提交，就可以通过命令git push origin master推送。
+
+克隆仓库
+要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone @github.com:vera66ll/gitlearn.git命令克隆。（@github.com:vera66ll/gitlearn.git是仓库地址）
+
+问题处理：
+当出现
+fatal: Unable to create 'E:/git_library/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+
+输入：在.git同级目录，执行rm -f .git/index.lock 
