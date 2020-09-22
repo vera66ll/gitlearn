@@ -39,9 +39,10 @@ git reset --hard commit id 指定回到commit id的版本
 但是git rm filename 删除版本区里的内容
 
 运程仓库
-1.cd ~/.ssh 进入ssh文件夹，查看是否有ssh key,文件夹里有id_rsa和id_rsa.pub秘钥
+1.cd ~/.ssh 进入ssh文件夹，ls: 查看是否有ssh key,文件夹里有id_rsa和id_rsa.pub秘钥; cat filename 查看秘钥
 如果没有，创建ssh key：
 ssh-keygen -t rsa -C"youremail@example.com"
+
 2.登录Github, 打开登陆GitHub，打开“Account settings”，“SSH Keys”页面：
 然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：
 点“Add Key”，你就应该看到已经添加的Key：
