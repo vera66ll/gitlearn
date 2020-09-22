@@ -71,3 +71,5 @@ may have crashed in this repository earlier:
 remove the file manually to continue.
 
 输入：在.git同级目录，执行rm -f .git/index.lock 
+
+create a new branch is quick
