@@ -48,3 +48,11 @@ ssh-keygen -t rsa -C"youremail@example.com"
 点“Add Key”，你就应该看到已经添加的Key：
 当然，GitHub允许你添加多个Key。假定你有若干电脑，你一会儿在公司提交，一会儿在家里提交，
 只要把每台电脑的Key都添加到GitHub，就可以在每台电脑上往GitHub推送了。
+
+3. github上创建一个repository,仅填入repository名字为gitlearn，创建了gitlearn此仓库。
+4.运行 git remote add origin git@github.com:vera66ll/gitlearn.git 把本地目录关联远程repository
+git remote remove origin 取消本地目录关联的远程库
+  此处远程库的名字是origin,是git的默认叫法。
+5.把本地库所有内容推送到远程库：git push -u origin master
+由于远程库是空的，因此第一次推送master分支时，加上了-u，既推送了本地master分支，还把本地master分支和远程分支关联起来。
+从现在开始，只要本地做了提交，就可以通过命令git push origin master推送。
